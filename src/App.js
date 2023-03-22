@@ -24,6 +24,10 @@ import StateCounterFunction from './component/StateCounterFunction';
 
 import FunctionEvent from './component/FunctionEvent';
 
+/* FRÅGOR OM EVENTS */
+import EvenQuestionOne from './component/EventQuestionOne';
+import EventQuestionTwo from './component/EventQuestionTwo';
+
 // hämtar in komponenten
 function App() {
   return (
@@ -50,6 +54,10 @@ function App() {
         <StateCounterClass />
         <StateCounterFunction />
         <FunctionEvent />
+
+        {/* SVAR PÅ FRÅGORNA OM EVENT */}
+        <EvenQuestionOne />
+        <EventQuestionTwo />
     </div>
   );
 }
