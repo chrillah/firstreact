@@ -17,10 +17,15 @@ import FunctionalComponentProps from './component/FunctionalComponentProps';
 
 import ClassAndProps from './component/ClassAndProps';
 
+
+import StateCounterClass from './component/StateCounterClass';
+
 // hämtar in komponenten
 function App() {
   return (
     <div className="App">
+
+        {/* 1:a Veckan - Komponenter (Functional & Class) & Props */}
         <Functional />
         <ClassComponent />
         <FunctionalProps name="Detta kommer från en prop"/>
@@ -35,6 +40,10 @@ function App() {
         <ClassAndProps message="Meddelande från förälder i en class component" />
 
         {/* detta skapas med shift + alt + a */}
+
+        {/* Dag två State & Events */}
+
+        <StateCounterClass />
     </div>
   );
 }
