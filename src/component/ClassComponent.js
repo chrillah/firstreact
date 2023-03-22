@@ -1,9 +1,9 @@
-import { Component } from "react";
+import { Component, Fragment } from "react";
 
 class ClassComponent extends Component{
     render(){
         return(
-            <h1>Detta kommer från en klass</h1>
+            <Fragment>Detta kommer från en klass</Fragment>
         )
     }
 }
