@@ -20,6 +20,10 @@ import ClassAndProps from './component/ClassAndProps';
 
 import StateCounterClass from './component/StateCounterClass';
 
+import StateCounterFunction from './component/StateCounterFunction';
+
+import FunctionEvent from './component/FunctionEvent';
+
 // hämtar in komponenten
 function App() {
   return (
@@ -44,6 +48,8 @@ function App() {
         {/* Dag två State & Events */}
 
         <StateCounterClass />
+        <StateCounterFunction />
+        <FunctionEvent />
     </div>
   );
 }
