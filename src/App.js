@@ -17,7 +17,14 @@ import FunctionalComponentProps from './component/FunctionalComponentProps';
 
 import ClassAndProps from './component/ClassAndProps';
 
+/* FRÅGOR OM PROPS */
+import FunctionalQuestionOne from './component/FunctionalQuestionOne';
+import FunctionalQuestionTwo from './component/FunctionalQuestionTwo';
 
+import ClassQuestionOne from './component/ClassQuestionOne';
+import ClassQuestionTwo from './component/ClassQuestionTwo';
+
+// dag 2
 import StateCounterClass from './component/StateCounterClass';
 
 import StateCounterFunction from './component/StateCounterFunction';
@@ -47,6 +54,13 @@ function App() {
 
         <ClassAndProps message="Meddelande från förälder i en class component" />
 
+        {/* SVAR OM PROPS */}
+        <FunctionalQuestionOne myName="Christopher"/>
+        <FunctionalQuestionTwo firstName="Christopher" surName="Rönnberg" />
+
+        <ClassQuestionOne myName="Christopher" />
+        <ClassQuestionTwo firstName="Christopher" surName="Rönnberg" />
+        
         {/* detta skapas med shift + alt + a */}
 
         {/* Dag två State & Events */}
@@ -55,7 +69,7 @@ function App() {
         <StateCounterFunction />
         <FunctionEvent />
 
-        {/* SVAR PÅ FRÅGORNA OM EVENT */}
+        {/* SVAR OM EVENT */}
         <EvenQuestionOne />
         <EventQuestionTwo />
     </div>
