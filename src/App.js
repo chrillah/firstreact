@@ -35,6 +35,14 @@ import FunctionEvent from './component/FunctionEvent';
 import EvenQuestionOne from './component/EventQuestionOne';
 import EventQuestionTwo from './component/EventQuestionTwo';
 
+// WEEK 2 (13) Condtitional Rendering & List rendering
+import ConditionalRenderingOne from './component/ConditionalRenderingOne';
+import ConditionalRenderingTwo from './component/ConditionalRenderingTwo';
+
+// LESSON WEEK 2 MED RICHARD
+import ClassConditionalRenderingLessonOne from './component/ClassConditionalRenderingLessonOne';
+import ClassConditionalRenderingLessonTwo from './component/ClassConditionalRenderingLessonTwo';
+
 // hämtar in komponenten
 function App() {
   return (
@@ -60,7 +68,7 @@ function App() {
 
         <ClassQuestionOne myName="Christopher" />
         <ClassQuestionTwo firstName="Christopher" surName="Rönnberg" />
-        
+
         {/* detta skapas med shift + alt + a */}
 
         {/* Dag två State & Events */}
@@ -72,6 +80,16 @@ function App() {
         {/* SVAR OM EVENT */}
         <EvenQuestionOne />
         <EventQuestionTwo />
+
+
+        {/* Conditional Rendering typ v-if */}
+        <ConditionalRenderingOne />
+
+        {/* conditonal rendering ? : */}
+        <ConditionalRenderingTwo />
+
+        <ClassConditionalRenderingLessonOne />
+        <ClassConditionalRenderingLessonTwo />
     </div>
   );
 }
