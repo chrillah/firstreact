@@ -1,0 +1,56 @@
+[
+    {
+        "id" : 1,
+        "firstname" : "Christopher",
+        "lastname" : "Rönnberg",
+        "vacation" : "Pacific"
+    },
+    {
+        "id" : 2,
+        "firstname" : "Effie",
+        "lastname" : "TacoBar",
+        "vacation" : "Turkey"
+    },
+    {
+        "id" : 3,
+        "firstname" : "Joshua",
+        "lastname" : "Rivas",
+        "vacation" : "Indian"
+    },
+    {
+        "id" : 4,
+        "firstname" : "Malin",
+        "lastname" : "Olofsson",
+        "vacation" : "Stor Uman"
+    },
+    {
+        "id" : 5,
+        "firstname" : "Almando",
+        "lastname" : "Rivas",
+        "vacation" : "Chile"
+    },
+    {
+        "id" : 6,
+        "firstname" : "Joshua",
+        "lastname" : "Rönnberg",
+        "vacation" : "Vallentuna"
+    },
+    {
+        "id" : 7,
+        "firstname" : "Peter",
+        "lastname" : "Rönnberg",
+        "vacation" : "Stureby"
+    },
+    {
+        "id" : 8,
+        "firstname" : "Jenny",
+        "lastname" : "Finska",
+        "vacation" : "Årsta"
+    },
+    {
+        "id" : 9,
+        "firstname" : "Frida",
+        "lastname" : "Nackademin",
+        "vacation" : "Luleå"
+    }
+]

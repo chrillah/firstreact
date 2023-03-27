@@ -47,6 +47,10 @@ import ClassConditionalRenderingLessonThree from './component/ClassConditionalRe
 import FunctionalListRenderingLessonOne from './component/FunctionalListRenderingLessonOne';
 import FunctionalListRenderingLessonTwo from './component/FunctionalListRenderingLessonTwo';
 import FunctionalListRenderingLessonThree from './component/FunctionalListRenderingLessonThree';
+import FunctionalListRenderingLessonFour from './component/FunctionalListRenderingLessonFour';
+
+// testa själv
+import FunctionalListRenderingCities from './component/FunctionalListRenderingCities';
 
 // hämtar in komponenten
 function App() {
@@ -100,6 +104,10 @@ function App() {
         <FunctionalListRenderingLessonOne />
         <FunctionalListRenderingLessonTwo />
         <FunctionalListRenderingLessonThree />
+        <FunctionalListRenderingLessonFour />
+
+        {/* testar själv */}
+        <FunctionalListRenderingCities />
     </div>
   );
 }
