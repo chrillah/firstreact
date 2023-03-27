@@ -42,6 +42,7 @@ import ConditionalRenderingTwo from './component/ConditionalRenderingTwo';
 // LESSON WEEK 2 MED RICHARD
 import ClassConditionalRenderingLessonOne from './component/ClassConditionalRenderingLessonOne';
 import ClassConditionalRenderingLessonTwo from './component/ClassConditionalRenderingLessonTwo';
+import ClassConditionalRenderingLessonThree from './component/ClassConditionalRenderingLessonThree';
 
 // hämtar in komponenten
 function App() {
@@ -90,6 +91,7 @@ function App() {
 
         <ClassConditionalRenderingLessonOne />
         <ClassConditionalRenderingLessonTwo />
+        <ClassConditionalRenderingLessonThree />
     </div>
   );
 }
