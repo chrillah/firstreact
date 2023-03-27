@@ -44,6 +44,10 @@ import ClassConditionalRenderingLessonOne from './component/ClassConditionalRend
 import ClassConditionalRenderingLessonTwo from './component/ClassConditionalRenderingLessonTwo';
 import ClassConditionalRenderingLessonThree from './component/ClassConditionalRenderingLessonThree';
 
+import FunctionalListRenderingLessonOne from './component/FunctionalListRenderingLessonOne';
+import FunctionalListRenderingLessonTwo from './component/FunctionalListRenderingLessonTwo';
+import FunctionalListRenderingLessonThree from './component/FunctionalListRenderingLessonThree';
+
 // hämtar in komponenten
 function App() {
   return (
@@ -92,6 +96,10 @@ function App() {
         <ClassConditionalRenderingLessonOne />
         <ClassConditionalRenderingLessonTwo />
         <ClassConditionalRenderingLessonThree />
+
+        <FunctionalListRenderingLessonOne />
+        <FunctionalListRenderingLessonTwo />
+        <FunctionalListRenderingLessonThree />
     </div>
   );
 }
