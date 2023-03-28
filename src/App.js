@@ -52,6 +52,14 @@ import FunctionalListRenderingLessonFour from './component/FunctionalListRenderi
 // testa själv
 import FunctionalListRenderingCities from './component/FunctionalListRenderingCities';
 
+// GENOMGÅNG vecka 2 (13)
+import FunctionalFormHandlerLessonOne from './component/FunctionalFormHandlerLessonOne';
+import FunctionalFormValidationLessonTwo from './component/FunctionalFormValidationLessonTwo';
+
+import FunctionalInlineStylingLessonThree from './component/FunctionalInlineStylingLessonThree';
+import FunctionalStyledComponentLessonFour from './component/FunctionalStyledComponentLessonFour';
+
+
 // hämtar in komponenten
 function App() {
   return (
@@ -108,6 +116,14 @@ function App() {
 
         {/* testar själv */}
         <FunctionalListRenderingCities />
+
+
+        {/* GENOMGÅNG */}
+        <FunctionalFormHandlerLessonOne />
+        <FunctionalFormValidationLessonTwo />
+
+        <FunctionalInlineStylingLessonThree />
+        <FunctionalStyledComponentLessonFour />
     </div>
   );
 }
