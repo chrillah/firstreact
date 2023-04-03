@@ -1,8 +1,13 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import {UserInfo} from '../UserInfo'
 
 function About() {
+    const msg = useContext(UserInfo)
   return (
-    <div>About</div>
+    <div>
+        <h1>{msg}</h1>
+        <div>About</div>
+    </div>
   )
 }
 

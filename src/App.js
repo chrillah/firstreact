@@ -67,6 +67,8 @@ import About from './pages/About'
 import Products from './pages/Products'
 import ErrorPage from './pages/ErrorPage'
 
+import { UserInfo } from './UserInfo'
+
 // hämtar in komponenten
 function App() {
     return (
@@ -135,18 +137,26 @@ function App() {
 
             <nav>
                 <ul>
-                    <li><Link to={'/'}>Home</Link></li>
-                    <li><Link to={'/about'}>About</Link></li>
-                    <li><Link to={'/products'}>Products</Link></li>
+                    <li>
+                        <Link to={'/'}>Home</Link>
+                    </li>
+                    <li>
+                        <Link to={'/about'}>About</Link>
+                    </li>
+                    <li>
+                        <Link to={'/products'}>Products</Link>
+                    </li>
                 </ul>
             </nav>
-            {/* React Router */}
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/products/:id" element={<Products />} />
-                <Route path="*" element={<ErrorPage />} />
-            </Routes>
+            <UserInfo.Provider value={'Hell'}>
+                {/* React Router */}
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/products/:id" element={<Products />} />
+                    <Route path="*" element={<ErrorPage />} />
+                </Routes>
+            </UserInfo.Provider>
         </div>
     )
 }
