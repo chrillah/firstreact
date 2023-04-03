@@ -1,131 +1,154 @@
-import './App.css';
+import './App.css'
 
 // Importerar komponenter för att använda dem
-import Functional from './component/Functional';
+import Functional from './component/Functional'
 
-import ClassComponent from './component/ClassComponent';
+import ClassComponent from './component/ClassComponent'
 
-import FunctionalProps from './component/FunctionalProps';
+import FunctionalProps from './component/FunctionalProps'
 
-import MoreFunctionalProps from './component/MoreFuntcionalProps';
+import MoreFunctionalProps from './component/MoreFuntcionalProps'
 
-import FunctionalPropsChildren from './component/FunctionalPropsChildren';
+import FunctionalPropsChildren from './component/FunctionalPropsChildren'
 
-import ClassComponentProps from './component/ClassComponentProps';
+import ClassComponentProps from './component/ClassComponentProps'
 
-import FunctionalComponentProps from './component/FunctionalComponentProps';
+import FunctionalComponentProps from './component/FunctionalComponentProps'
 
-import ClassAndProps from './component/ClassAndProps';
+import ClassAndProps from './component/ClassAndProps'
 
 /* FRÅGOR OM PROPS */
-import FunctionalQuestionOne from './component/FunctionalQuestionOne';
-import FunctionalQuestionTwo from './component/FunctionalQuestionTwo';
+import FunctionalQuestionOne from './component/FunctionalQuestionOne'
+import FunctionalQuestionTwo from './component/FunctionalQuestionTwo'
 
-import ClassQuestionOne from './component/ClassQuestionOne';
-import ClassQuestionTwo from './component/ClassQuestionTwo';
+import ClassQuestionOne from './component/ClassQuestionOne'
+import ClassQuestionTwo from './component/ClassQuestionTwo'
 
 // dag 2
-import StateCounterClass from './component/StateCounterClass';
+import StateCounterClass from './component/StateCounterClass'
 
-import StateCounterFunction from './component/StateCounterFunction';
+import StateCounterFunction from './component/StateCounterFunction'
 
-import FunctionEvent from './component/FunctionEvent';
+import FunctionEvent from './component/FunctionEvent'
 
 /* FRÅGOR OM EVENTS */
-import EvenQuestionOne from './component/EventQuestionOne';
-import EventQuestionTwo from './component/EventQuestionTwo';
+import EvenQuestionOne from './component/EventQuestionOne'
+import EventQuestionTwo from './component/EventQuestionTwo'
 
 // WEEK 2 (13) Condtitional Rendering & List rendering
-import ConditionalRenderingOne from './component/ConditionalRenderingOne';
-import ConditionalRenderingTwo from './component/ConditionalRenderingTwo';
+import ConditionalRenderingOne from './component/ConditionalRenderingOne'
+import ConditionalRenderingTwo from './component/ConditionalRenderingTwo'
 
 // LESSON WEEK 2 MED RICHARD
-import ClassConditionalRenderingLessonOne from './component/ClassConditionalRenderingLessonOne';
-import ClassConditionalRenderingLessonTwo from './component/ClassConditionalRenderingLessonTwo';
-import ClassConditionalRenderingLessonThree from './component/ClassConditionalRenderingLessonThree';
+import ClassConditionalRenderingLessonOne from './component/ClassConditionalRenderingLessonOne'
+import ClassConditionalRenderingLessonTwo from './component/ClassConditionalRenderingLessonTwo'
+import ClassConditionalRenderingLessonThree from './component/ClassConditionalRenderingLessonThree'
 
-import FunctionalListRenderingLessonOne from './component/FunctionalListRenderingLessonOne';
-import FunctionalListRenderingLessonTwo from './component/FunctionalListRenderingLessonTwo';
-import FunctionalListRenderingLessonThree from './component/FunctionalListRenderingLessonThree';
-import FunctionalListRenderingLessonFour from './component/FunctionalListRenderingLessonFour';
+import FunctionalListRenderingLessonOne from './component/FunctionalListRenderingLessonOne'
+import FunctionalListRenderingLessonTwo from './component/FunctionalListRenderingLessonTwo'
+import FunctionalListRenderingLessonThree from './component/FunctionalListRenderingLessonThree'
+import FunctionalListRenderingLessonFour from './component/FunctionalListRenderingLessonFour'
 
 // testa själv
-import FunctionalListRenderingCities from './component/FunctionalListRenderingCities';
+import FunctionalListRenderingCities from './component/FunctionalListRenderingCities'
 
 // GENOMGÅNG vecka 2 (13)
-import FunctionalFormHandlerLessonOne from './component/FunctionalFormHandlerLessonOne';
-import FunctionalFormValidationLessonTwo from './component/FunctionalFormValidationLessonTwo';
+import FunctionalFormHandlerLessonOne from './component/FunctionalFormHandlerLessonOne'
+import FunctionalFormValidationLessonTwo from './component/FunctionalFormValidationLessonTwo'
 
-import FunctionalInlineStylingLessonThree from './component/FunctionalInlineStylingLessonThree';
-import FunctionalStyledComponentLessonFour from './component/FunctionalStyledComponentLessonFour';
+import FunctionalInlineStylingLessonThree from './component/FunctionalInlineStylingLessonThree'
+import FunctionalStyledComponentLessonFour from './component/FunctionalStyledComponentLessonFour'
 
+// React Router
+import { Routes, Route, Link } from 'react-router-dom'
+
+import Home from './pages/Home'
+import About from './pages/About'
+import Products from './pages/Products'
+import ErrorPage from './pages/ErrorPage'
 
 // hämtar in komponenten
 function App() {
-  return (
-    <div className="App">
+    return (
+        <div className="App">
+            {/* 1:a Veckan - Komponenter (Functional & Class) & Props */}
+            <Functional />
+            <ClassComponent />
+            <FunctionalProps name="Detta kommer från en prop" />
+            <MoreFunctionalProps first="Prop 1" last="Prop 2" />
 
-        {/* 1:a Veckan - Komponenter (Functional & Class) & Props */}
-        <Functional />
-        <ClassComponent />
-        <FunctionalProps name="Detta kommer från en prop"/>
-        <MoreFunctionalProps first="Prop 1" last="Prop 2"/>
+            <FunctionalPropsChildren
+                first="Prop 1"
+                last="Prop 2"
+                children="Detta kommer från en child"
+            />
 
-        <FunctionalPropsChildren first="Prop 1" last="Prop 2" children="Detta kommer från en child"/>
+            <ClassComponentProps text="Detta kommer från en klass prop" />
 
-        <ClassComponentProps text="Detta kommer från en klass prop"/>
+            <FunctionalComponentProps message="Meddelande från förälder i en functional component" />
 
-        <FunctionalComponentProps message="Meddelande från förälder i en functional component" />
+            <ClassAndProps message="Meddelande från förälder i en class component" />
 
-        <ClassAndProps message="Meddelande från förälder i en class component" />
+            {/* SVAR OM PROPS */}
+            <FunctionalQuestionOne myName="Christopher" />
+            <FunctionalQuestionTwo firstName="Christopher" surName="Rönnberg" />
 
-        {/* SVAR OM PROPS */}
-        <FunctionalQuestionOne myName="Christopher"/>
-        <FunctionalQuestionTwo firstName="Christopher" surName="Rönnberg" />
+            <ClassQuestionOne myName="Christopher" />
+            <ClassQuestionTwo firstName="Christopher" surName="Rönnberg" />
 
-        <ClassQuestionOne myName="Christopher" />
-        <ClassQuestionTwo firstName="Christopher" surName="Rönnberg" />
+            {/* detta skapas med shift + alt + a */}
 
-        {/* detta skapas med shift + alt + a */}
+            {/* Dag två State & Events */}
 
-        {/* Dag två State & Events */}
+            <StateCounterClass />
+            <StateCounterFunction />
+            <FunctionEvent />
 
-        <StateCounterClass />
-        <StateCounterFunction />
-        <FunctionEvent />
+            {/* SVAR OM EVENT */}
+            <EvenQuestionOne />
+            <EventQuestionTwo />
 
-        {/* SVAR OM EVENT */}
-        <EvenQuestionOne />
-        <EventQuestionTwo />
+            {/* Conditional Rendering typ v-if */}
+            <ConditionalRenderingOne />
 
+            {/* conditonal rendering ? : */}
+            <ConditionalRenderingTwo />
 
-        {/* Conditional Rendering typ v-if */}
-        <ConditionalRenderingOne />
+            <ClassConditionalRenderingLessonOne />
+            <ClassConditionalRenderingLessonTwo />
+            <ClassConditionalRenderingLessonThree />
 
-        {/* conditonal rendering ? : */}
-        <ConditionalRenderingTwo />
+            <FunctionalListRenderingLessonOne />
+            <FunctionalListRenderingLessonTwo />
+            <FunctionalListRenderingLessonThree />
+            <FunctionalListRenderingLessonFour />
 
-        <ClassConditionalRenderingLessonOne />
-        <ClassConditionalRenderingLessonTwo />
-        <ClassConditionalRenderingLessonThree />
+            {/* testar själv */}
+            <FunctionalListRenderingCities />
 
-        <FunctionalListRenderingLessonOne />
-        <FunctionalListRenderingLessonTwo />
-        <FunctionalListRenderingLessonThree />
-        <FunctionalListRenderingLessonFour />
+            {/* GENOMGÅNG */}
+            <FunctionalFormHandlerLessonOne />
+            <FunctionalFormValidationLessonTwo />
 
-        {/* testar själv */}
-        <FunctionalListRenderingCities />
+            <FunctionalInlineStylingLessonThree />
+            <FunctionalStyledComponentLessonFour />
 
-
-        {/* GENOMGÅNG */}
-        <FunctionalFormHandlerLessonOne />
-        <FunctionalFormValidationLessonTwo />
-
-        <FunctionalInlineStylingLessonThree />
-        <FunctionalStyledComponentLessonFour />
-    </div>
-  );
+            <nav>
+                <ul>
+                    <li><Link to={'/'}>Home</Link></li>
+                    <li><Link to={'/about'}>About</Link></li>
+                    <li><Link to={'/products'}>Products</Link></li>
+                </ul>
+            </nav>
+            {/* React Router */}
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/products/:id" element={<Products />} />
+                <Route path="*" element={<ErrorPage />} />
+            </Routes>
+        </div>
+    )
 }
 
-export default App;
+export default App
