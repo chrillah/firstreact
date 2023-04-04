@@ -134,7 +134,7 @@ function App() {
 
             <FunctionalInlineStylingLessonThree />
             <FunctionalStyledComponentLessonFour />
-
+                {/* React Router - nya sättet */}
             <nav>
                 <ul>
                     <li>
@@ -149,9 +149,9 @@ function App() {
                 </ul>
             </nav>
             <UserInfo.Provider value={'Hell'}>
-                {/* React Router */}
+
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<Home firstName={"Christopher"} counter={1}/>} />
                     <Route path="/about" element={<About />} />
                     <Route path="/products/:id" element={<Products />} />
                     <Route path="*" element={<ErrorPage />} />
